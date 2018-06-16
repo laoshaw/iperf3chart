@@ -6,9 +6,10 @@
 
 # Usage
 
-	$ bash bw-test.sh example.com # do a bandwidth test to example.com running `iperf -s`
+	$ bash bw-test.sh iperf3.server.ip  # run iperf -s on iperf3.server.ip first
+	$ for i in {1..100}; do ./bw-test.sh iperf3.server.ip; sleep 15; done
 	$ bash aplot.sh # plot everything
-	$ google-chrome-unstable example.com_2015-12-27_wlp4s0.svg
+	$ google-chrome final.svg
 
 
 # Related projects
