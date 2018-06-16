@@ -1,7 +1,6 @@
 #!/bin/bash
 # Thanks to http://mywiki.wooledge.org/BashFAQ & the guys on #bash Freenode IRC
 
-: <<"EOF"
 shopt -s globstar
 opwd=$(pwd)
 exists() { [[ -e $1 ]]; }
@@ -18,7 +17,3 @@ do
 	fi
 	cd "$opwd" || exit
 done
-EOF
-
-./plot.sh | gnuplot > x.svg
-#google-chrome x.svg
